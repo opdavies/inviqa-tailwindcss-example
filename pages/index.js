@@ -6,9 +6,7 @@ export default function Home() {
       <div className="flex flex-col justify-center p-24 min-h-screen bg-white dark:bg-[#111111]">
         <ImageAndText
           buttonText={"Explore this event"}
-          imageUrl={
-            "https://inviqa.com/sites/default/files/styles/pullout/public/2020-08/XD-1.jpeg?h=f75d236a&itok=PBoXPDmW"
-          }
+          imageUrl={"/image.jpeg"}
           title={"CXcon: Experience Transformation"}
         >
           <p>
