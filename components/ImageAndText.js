@@ -28,7 +28,7 @@ export default function ImageAndText({
                 <article className="h-full">
                   <div className="h-full">
                     <img
-                      className="object-cover h-full"
+                      className="object-cover h-full w-full"
                       src={imageUrl}
                       width="733"
                       height="412"
