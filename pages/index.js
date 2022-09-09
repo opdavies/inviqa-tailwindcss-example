@@ -3,7 +3,7 @@ import ImageAndText from "../components/ImageAndText";
 export default function Home() {
   return (
     <div>
-      <div className="flex flex-col justify-center p-24 min-h-screen bg-white">
+      <div className="flex flex-col justify-center p-24 min-h-screen bg-white dark:bg-[#111111]">
         <ImageAndText
           buttonText={"Explore this event"}
           imageUrl={

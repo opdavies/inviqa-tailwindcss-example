@@ -6,7 +6,7 @@ This is a component from the [Inviqa](https://inviqa.com) website that I recreat
 
 After attending the [Pro Tailwind theming workshop](), I moved it into a Next.js application and refactored it to use CSS custom properties, and moved the button and corner styles into a custom plugin.
 
-The `flex-basis` styles have also been moved into a separate plugin.
+The `flex-basis` styles have also been moved into a separate plugin, and I've added dark mode support which wasn't in the original version.
 
 ## Themes
 

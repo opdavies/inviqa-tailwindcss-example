@@ -40,8 +40,8 @@ export default function ImageAndText({
               </div>
             </div>
 
-            <div className="p-6 bg-grey">
-              <div className="leading-relaxed">
+            <div className="p-6 bg-grey dark:bg-[#222222]">
+              <div className="leading-relaxed dark:text-white">
                 <h2 className="text-4xl font-bold leading-tight">{title}</h2>
                 <div className="mt-4 markup">{children}</div>
                 <p>
