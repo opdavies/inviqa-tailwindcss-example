@@ -13,6 +13,32 @@ let colors = {
   white: "#fff",
 };
 
+let themes = {
+  blue: {
+    quaternary: colors.red,
+    quinary: colors.red,
+    primary: colors.blue,
+    secondary: colors.red,
+    tertiary: colors.white,
+  },
+
+  purple: {
+    quaternary: colors.white,
+    quinary: colors.purple,
+    primary: colors.purple,
+    secondary: colors.orange,
+    tertiary: colors.purple,
+  },
+
+  teal: {
+    quaternary: colors.pink,
+    quinary: colors.pink,
+    primary: colors.teal,
+    secondary: colors.pink,
+    tertiary: colors.white,
+  },
+};
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -30,5 +56,5 @@ module.exports = {
       tertiary: "var(--color-tertiary)",
     },
   },
-  plugins: [flexBasisPlugin, multiThemePlugin],
+  plugins: [flexBasisPlugin, multiThemePlugin({ themes })],
 };
