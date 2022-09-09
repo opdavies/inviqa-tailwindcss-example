@@ -1,15 +1,16 @@
 FROM node:16-bullseye AS base
 
-ENV PATH=${PATH}:/app/node_modules/.bin
+ENV PATH=${PATH}:/node_modules/.bin
 
 WORKDIR /app
 
-RUN chown node:node -R /app
+RUN mkdir -p /node_modules \
+  && chown node:node -R /app /node_modules
 
 USER node
 
-COPY --chown=node:node package.* ./
+COPY --chown=node:node package.json *yarn* ./
 
-RUN npm install
+RUN yarn install --frozen-lockfile
 
 COPY --chown=node:node . .

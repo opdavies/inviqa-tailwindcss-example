@@ -4,11 +4,11 @@ default:
 down:
   docker compose down
 
-npm *args:
-  just _run npm {{args}}
-
 up *args:
   docker compose up {{args}}
+
+yarn *args:
+  just _run yarn {{args}}
 
 _run +args:
   docker compose run --rm --entrypoint bash app -c {{args}}
