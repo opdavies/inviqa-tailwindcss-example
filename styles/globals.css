@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer components {
+  .markup {
+    * + * {
+      @apply mt-4;
+    }
+  }
+
   .fancy-corners {
     position: relative;
     background-color: #fff;
@@ -14,7 +20,7 @@
     position: absolute;
     width: 8em;
     height: 8em;
-    background-color: theme('colors.primary');
+    background-color: theme("colors.primary");
     background-size: 100% 100%;
     background-position: 0 0;
     transform: translateZ(-1px);
