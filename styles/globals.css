@@ -3,22 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .button {
-    @apply px-5 py-2 inline-block text-lg font-bold border-2 duration-200 transition-colors ease-in-out;
-  }
-
-  [data-theme="blue"] .button--secondary {
-    @apply bg-red border-red text-white hover:bg-white hover:text-red;
-  }
-
-  [data-theme="purple"] .button--secondary {
-    @apply bg-orange border-orange text-purple hover:bg-white hover:text-purple hover:border-purple;
-  }
-
-  [data-theme="teal"] .button--secondary {
-    @apply bg-pink border-pink text-white hover:bg-white hover:text-pink;
-  }
-
   .fancy-corners {
     position: relative;
     background-color: #fff;
@@ -30,21 +14,11 @@
     position: absolute;
     width: 8em;
     height: 8em;
+    background-color: theme('colors.primary');
     background-size: 100% 100%;
     background-position: 0 0;
     transform: translateZ(-1px);
     z-index: -1;
-    @apply bg-purple;
-  }
-
-  [data-theme="blue"] .fancy-corners:after,
-  [data-theme="blue"] .fancy-corners:before {
-    @apply bg-blue;
-  }
-
-  [data-theme="teal"] .fancy-corners:after,
-  [data-theme="teal"] .fancy-corners:before {
-    @apply bg-teal;
   }
 
   .fancy-corners[class*="--bottom"]:after,

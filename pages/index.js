@@ -6,7 +6,7 @@ export default function Home() {
         <div data-theme="blue" className="mx-auto max-w-6xl">
           <h2 className="sr-only">Featured case study</h2>
           <section className="font-sans text-black">
-            <div className="lg:flex lg:items-center [ ] fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right">
+            <div className="lg:flex lg:items-center fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right">
               <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
                 <div className="h-full">
                   <article className="h-full">
@@ -42,7 +42,7 @@ export default function Home() {
                   </p>
                   <p>
                     <a
-                      className="mt-4 button button--secondary"
+                      className="inline-block py-2 px-5 mt-4 text-lg font-bold border-2 transition-colors duration-200 ease-in-out hover:bg-white focus:bg-white bg-secondary border-secondary text-tertiary hover:border-quinary hover:text-quinary focus:border-quinary focus:text-quinary"
                       href="https://inviqa.com/cxcon-experience-transformation"
                     >
                       Explore this event
